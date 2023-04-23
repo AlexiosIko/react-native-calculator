@@ -1,21 +1,29 @@
 {
   "name": "calculator",
   "version": "1.0.0",
+  "homepage": "https://alexiosiko.github.io//react-native-calculator",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~48.0.10",
+    "@expo/webpack-config": "^18.0.1",
+    "expo": "^48.0.11",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.6"
+    "react-dom": "18.2.0",
+    "react-native": "0.71.6",
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-web": "~0.18.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "gh-pages": "^5.0.0"
   },
   "private": true
 }
